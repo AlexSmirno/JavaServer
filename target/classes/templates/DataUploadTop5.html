@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Вывод запроса</title>
+</head>
+<body>
+<a href="/">Вернуться на главнею страницу</a>
+<table border="1">
+    <tr>
+        <th>Транцзакция</th>
+        <th>Количество транкзакций</th>
+        <th>Вчтречаемость</th>
+    </tr>
+    <tr th:each="type_trans : ${data}" align="center" >
+        <td th:each="text : ${type_trans}" th:text="${text}"></td>
+    </tr>
+</table>
+</body>
+</html>

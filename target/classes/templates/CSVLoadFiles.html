@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файлов</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="new_file" accept=".csv" >
+    <input type="submit" value="Загрузить"/>
+</form>
+<p th:text="${message}" th:style="${color}"/>
+<a href="/">На главную</a>
+</body>
+</html>
